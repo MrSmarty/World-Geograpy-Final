@@ -13,20 +13,38 @@
     color: #FFFFFF;
     font-family: "korrina-regular";
     text-shadow: 4px 4px #000000;
+    text-align: center;
+    width: 800px;
+    height: 600px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 th {
     color: #FFFFFF;
     letter-spacing: 2px;
+    font-size: 35px !important;
 }
 
 td {
     cursor: pointer;
+    font-size: 80px !important;
 }
 
 td, th {    
     height: 120px;
     width: 180px;
+}
+
+table {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 table, td, tr, th {
