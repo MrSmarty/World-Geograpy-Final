@@ -1,0 +1,46 @@
+@font-face {
+    font-family: swiss_911;
+    src: url(swiss_911.ttf);
+}
+
+@font-face {
+    font-family: korinna-regular;
+    src: url(Korrina-Regular.otf);
+}
+
+#question-box {
+    background-color: #010a78;
+    color: #FFFFFF;
+    font-family: "korrina-regular";
+    text-shadow: 4px 4px #000000;
+}
+
+th {
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+td {
+    cursor: pointer;
+}
+
+td, th {    
+    height: 120px;
+    width: 180px;
+}
+
+table, td, tr, th {
+    font-size: 50px;
+    font-family: "swiss_911";
+    text-align: center;
+    text-shadow: 4px 4px #000000;
+    border: 2px;
+    border-style: solid;
+    border-color: #000000;
+    background-color: #010a78;
+}
+
+body {
+    color: #d39d4a;
+    font-family: Impact, sans-serif;
+}

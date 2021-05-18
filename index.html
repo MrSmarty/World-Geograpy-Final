@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geography Final</title>
+        <script src="questions.js"></script>
+        <link rel="stylesheet" href="questions.css">
+    </head>
+    <body>
+        <div id="question-box" hidden=true>
+            <h2 id="question">Question</h2>
+            <input type="text" placeholder="Enter Answer Here:" id="answer"></textarea>
+            <button onclick="checkAnswer()" id="submit">Submit</button>
+        </div>
+        <table cellspacing=0>
+            <tr>
+                <th>Let's get Physical</th>
+                <th>Exports and Contributions</th>
+                <th>Topic 3</th>
+                <th>Topic 4</th>
+                <th>Topic 5</th>
+                <th>Topic 6</th>
+            </tr>
+            <tr>
+                <td onclick="question(0, 0)" id="0-0">$200</td>
+                <td onclick="question(0, 1)" id="0-1">$200</td>
+                <td onclick="question(0, 2)" id="0-2">$200</td>
+                <td onclick="question(0, 3)" id="0-3">$200</td>
+                <td onclick="question(0, 4)" id="0-4">$200</td>
+                <td onclick="question(0, 5)" id="0-5">$200</td>
+            </tr>
+            <tr>
+                <td onclick="question(1, 0)" id="1-0">$400</td>
+                <td onclick="question(1, 1)" id="1-1">$400</td>
+                <td onclick="question(1, 2)" id="1-2">$400</td>
+                <td onclick="question(1, 3)" id="1-3">$400</td>
+                <td onclick="question(1, 4)" id="1-4">$400</td>
+                <td onclick="question(1, 5)" id="1-5">$400</td>
+            </tr>
+            <tr>
+                <td onclick="question(2, 0)" id="2-0">$600</td>
+                <td onclick="question(2, 1)" id="2-1">$600</td>
+                <td onclick="question(2, 2)" id="2-2">$600</td>
+                <td onclick="question(2, 3)" id="2-3">$600</td>
+                <td onclick="question(2, 4)" id="2-4">$600</td>
+                <td onclick="question(2, 5)" id="2-5">$600</td>
+            </tr>
+            <tr>
+                <td onclick="question(3, 0)" id="3-0">$800</td>
+                <td onclick="question(3, 1)" id="3-1">$800</td>
+                <td onclick="question(3, 2)" id="3-2">$800</td>
+                <td onclick="question(3, 3)" id="3-3">$800</td>
+                <td onclick="question(3, 4)" id="3-4">$800</td>
+                <td onclick="question(3, 5)" id="3-5">$800</td>
+            </tr>
+            <tr>
+                <td onclick="question(4, 0)" id="4-0">$1000</td>
+                <td onclick="question(4, 1)" id="4-1">$1000</td>
+                <td onclick="question(4, 2)" id="4-2">$1000</td>
+                <td onclick="question(4, 3)" id="4-3">$1000</td>
+                <td onclick="question(4, 4)" id="4-4">$1000</td>
+                <td onclick="question(4, 5)" id="4-5">$1000</td>
+            </tr>
+        </table>
+        $<span id="score">0</span>
+    </body>
+</html>
