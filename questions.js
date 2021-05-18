@@ -1,17 +1,17 @@
 var questions = [
-    ["What is the Capital of Denmark?", "This famous children’s toy originates from Denmark.", "", "", "", ""], // [1][1-6]
-    ["Which Hemisphere is Denmark located in?", "This export from Denmark is commonly used as a medium for art, primarily on sidewalks.", "", "", "", ""], // [2][1-6]
-    ["Which country shares a land border with Denmark?", "Denmark produces few of these gases.", "", "", "", ""], // [3][1-6]
-    ["What is the terrain like in Denmark?", "Denmark exports these grains, commonly found in breakfast foods.", "", "", "", ""], // [4][1-6]
-    ["Where is the mainland of Denmark located?", "Denmark has little of this harmful substance.", "", "", "", ""], // [5][1-6]
+    ["The capital of Denmark.", "This famous children’s toy originates from Denmark.", "This government is found in Denmark, as well as many other countries.", "", "", ""], // [1][1-6]
+    ["Denmark is located in this hemisphere.", "This export from Denmark is commonly used as a medium for art, primarily on sidewalks.", "This people group originated from Denmark, as well as other Scandinavian countries.", "", "", ""], // [2][1-6]
+    ["This country shares a land border with Denmark.", "Denmark produces few of these gases.", "This is required in Denmark from ages 6 to 16.", "", "", ""], // [3][1-6]
+    ["The Danish terrain is very ___.", "Denmark exports these grains, commonly found in breakfast foods.", "The amount of people in an area, 137 people per kilometer in Denmark.", "", "", ""], // [4][1-6]
+    ["The Danish mainland  is located here.", "Denmark has little of this harmful substance.", "This statistic states that 99% of the Danish population can read.", "", "", ""], // [5][1-6]
 ];
 
 var answers = [
-    ["copenhagen", "lego", "", "", "", ""], // [1][1-6]
-    ["the northern hemisphere", "chalk", "", "", "", ""], // [2][1-6]
-    ["germany", "greenhouse gases", "", "", "", ""], // [3][1-6]
-    ["flat", "cereal crops", "", "", "", ""], // [4][1-6]
-    ["the jutland peninsula", "pollution", "", "", "", ""], // [5][1-6]
+    ["what is copenhagen?", "what is lego?", "what is a constitutional monarchy?", "", "", ""], // [1][1-6]
+    ["what is the northern hemisphere?", "what is chalk?", "what are the vikings?", "", "", ""], // [2][1-6]
+    ["what is germany?", "what are greenhouse gases?", "what is education?", "", "", ""], // [3][1-6]
+    ["what is flat?", "what are cereal crops?", "what is population density?", "", "", ""], // [4][1-6]
+    ["what is the jutland peninsula?", "what is pollution?", "what is the literacy rate?", "", "", ""], // [5][1-6]
 ];
 
 var used = [
@@ -54,5 +54,21 @@ function checkAnswer() {
     }
     document.getElementById("answer").value = "";
     document.getElementById("question-box").hidden = true;
+    document.getElementById("hints").hidden = true;
     document.getElementById("board").hidden = false;
+}
+
+function getHints() {
+    document.getElementById("hint1").innerHTML = answers[getRandomInt(0, 4)][getRandomInt(0, 5)];
+    document.getElementById("hint2").innerHTML = answers[getRandomInt(0, 4)][getRandomInt(0, 5)];
+    document.getElementById("hint3").innerHTML = answers[getRandomInt(0, 4)][getRandomInt(0, 5)];
+    document.getElementById("hint4").innerHTML = answers[getRandomInt(0, 4)][getRandomInt(0, 5)];
+    document.getElementById("hint"+getRandomInt(1, 4)).innerHTML = answers[globalValue][globalCategory];
+    document.getElementById("hints").hidden = false;
+}
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }

@@ -13,13 +13,22 @@
             <h2 id="question">Question</h2>
             <input type="text" placeholder="Enter Answer Here:" id="answer"></textarea>
             <button onclick="checkAnswer()" id="submit">Submit</button>
+            <div onclick="getHints()" id="getHints">
+                Get Hints
+                <div id="hints" hidden=true>
+                    <span id="hint1"></span> <br>
+                    <span id="hint2"></span> <br>
+                    <span id="hint3"></span> <br>
+                    <span id="hint4"></span>
+                </div>
+            </div>
         </div>
     </div>
     <table cellspacing=0 id="board">
         <tr>
             <th>Let's get Physical</th>
             <th>Exports and Contributions</th>
-            <th>Topic 3</th>
+            <th>Power, Politics, and Population</th>
             <th>Topic 4</th>
             <th>Topic 5</th>
             <th>Topic 6</th>
@@ -66,6 +75,9 @@
         </tr>
     </table>
     $<span id="score">0</span>
+    <audio loop autoplay muted>
+        <source src="jeopardy-theme.mp3">
+    </audio>
 </body>
 
 </html>
