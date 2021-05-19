@@ -8,6 +8,11 @@
     src: url(Korrina-Regular.otf);
 }
 
+.score {
+    font-size: 80px;
+    text-align: center;
+}
+
 #question-box {
     background-color: #010a78;
     color: #FFFFFF;
@@ -50,7 +55,7 @@ td, th {
 table {
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -64,9 +69,11 @@ table, td, tr, th {
     border-style: solid;
     border-color: #000000;
     background-color: #010a78;
+    color: #d39d4a;
 }
 
 body {
-    color: #d39d4a;
+    color: #FFFFFF;
+    background-color: #000000;
     font-family: Impact, sans-serif;
 }

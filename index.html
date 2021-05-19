@@ -15,12 +15,12 @@
             <button onclick="checkAnswer()" id="submit">Submit</button>
             <div onclick="getHints()" id="getHints">
                 Get Hints
-                <div id="hints" hidden=true>
-                    <span id="hint1"></span> <br>
-                    <span id="hint2"></span> <br>
-                    <span id="hint3"></span> <br>
-                    <span id="hint4"></span>
-                </div>
+            </div>
+            <div id="hints" hidden=true>
+                <span id="hint1"></span> <br>
+                <span id="hint2"></span> <br>
+                <span id="hint3"></span> <br>
+                <span id="hint4"></span>
             </div>
         </div>
     </div>
@@ -29,9 +29,9 @@
             <th>Let's get Physical</th>
             <th>Exports and Contributions</th>
             <th>Power, Politics, and Population</th>
-            <th>Topic 4</th>
-            <th>Topic 5</th>
-            <th>Topic 6</th>
+            <th>People and the Environment</th>
+            <th>Locations & History</th>
+            <th>Danish Traditions</th>
         </tr>
         <tr>
             <td onclick="question(0, 0)" id="0-0">$200</td>
@@ -74,8 +74,8 @@
             <td onclick="question(4, 5)" id="4-5">$1000</td>
         </tr>
     </table>
-    $<span id="score">0</span>
-    <audio loop autoplay muted>
+    <div class="score">$<span id="score">0</span></div>
+    <audio loop autoplay>
         <source src="jeopardy-theme.mp3">
     </audio>
 </body>
