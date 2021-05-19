@@ -36,6 +36,15 @@
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+#getHints {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#hints {
+    padding: 10px;
+}
+
 th {
     color: #FFFFFF;
     letter-spacing: 2px;
